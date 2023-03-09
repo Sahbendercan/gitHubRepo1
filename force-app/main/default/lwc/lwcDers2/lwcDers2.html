@@ -1,0 +1,12 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" onchange={method1}></lightning-input>
+            <lightning-input type="text" label="Enter some text" onblur={method2}></lightning-input>
+            <lightning-button-icon icon-name="utility:save"      alternative-text="Save"     class="slds-m-left_xx-small" title="Save"></lightning-button-icon>
+            <h1> Your name: {name}</h1>
+            <h1> Your surname: {surname}</h1>
+        </div>
+    </lightning-card>
+    
+</template>

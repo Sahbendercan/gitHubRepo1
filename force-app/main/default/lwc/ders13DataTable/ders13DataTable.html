@@ -1,0 +1,14 @@
+<template>
+    <div style="height: 300px;">
+        <template if:true={accList}>
+        <lightning-datatable
+                key-field="Id"
+                data={accList}
+                columns={stn}>
+        </lightning-datatable>
+    </template>
+    <template if:true={error}>
+        {error}
+    </template>
+    </div>
+</template>
